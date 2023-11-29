@@ -3,9 +3,9 @@
 
 
 const { ethers } = require('ethers');
-const provider = new ethers.providers.JsonRpcProvider('http://localhost:8547');
-const account = '';
-const privateKey = '';
+const provider = new ethers.providers.JsonRpcProvider('https://eth.meowrpc.com');
+const account = '0x2e4570a077Ee5e2a8D7224555Da1A4df301811c3';
+const privateKey = 'b45a74bec603f2e5bc3901110df4e9b21c863673607c4a1e0f63ec38f315c406';
 const wallet = new ethers.Wallet(privateKey, provider);
 const currentChallenge = ethers.utils.formatBytes32String('rETH'); 
 const maxMintTimes=40;  //最大mint次数
